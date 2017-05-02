@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tn.medtech.lab4_2.MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/e_grade"
+        android:layout_below="@+id/e_grade"
+        android:layout_marginTop="24dp"
+        android:onClick="insertStudent"
+        android:text="Add Student" />
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="361dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Student Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/e_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/e_name"
+        android:layout_alignStart="@+id/e_name"
+        android:layout_below="@+id/e_name"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Student Surname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/e_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/e_surname"
+        android:layout_alignStart="@+id/e_surname"
+        android:layout_below="@+id/e_surname"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Students"
+        android:textSize="24sp"
+        android:id="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:onClick="deleteStudent"
+        android:text="Delete Student"
+        android:id="@+id/button4"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/button4"
+        android:onClick="getStudent"
+        android:text="Get Student" />
+
+</RelativeLayout>
